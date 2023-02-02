@@ -1,0 +1,66 @@
+---
+title: "Descriptive Statistics"
+author: "Joshalyl Taberna"
+format: html
+editor: visual
+---
+
+```{r}
+head(my_data, 6)
+```
+
+# 
+
+# Descriptive statistics for a single group
+
+## Measure of central tendency: mean, median, mode
+
+```{r}
+mean(my_data$Sepal.Length)
+```
+
+```{r}
+median(my_data$Sepal.Length)
+```
+
+```{r}
+mfv(my_data$Sepal.Length)
+```
+
+## Measure of variablity
+
+```{r}
+min(my_data$Sepal.Length)
+```
+
+```{r}
+max(my_data$Sepal.Length)
+```
+
+```{r}
+range(my_data$Sepal.Length)
+```
+
+### Interquartile range
+
+```{r}
+quantile(my_data$Sepal.Length)
+```
+
+```{r}
+quantile(my_data$Sepal.Length, seq(0, 1, 0.1))
+```
+
+```{r}
+IQR(my_data$Sepal.Length)
+```
+
+### Variance and standard deviation
+
+```{r}
+var(my_data$Sepal.Length)
+```
+
+```{r}
+sd(my_data$Sepal.Length)
+```
